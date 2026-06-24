@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" type="image/png" href="assets/logoTransparent.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>GlassOff</title>
+</head>
+
+<body>
+
+    <!-- Parte Superior -->
+    <header>
+
+        <!-- Barra promocional -->
+        <div class="header-top">
+            World Cup Sale - 50% OFF
+        </div>
+
+        <!-- Logo + Icones -->
+        <div class="header-center">
+
+            <a class="header-logo" href="Home.html" aria-label="GlassOff - Inicio">
+                <img src="assets/logoTransparent.png" alt="GlassOff">
+            </a>
+
+            <div class="icons">
+                <button class="header-icon-button js-search-open" type="button" aria-label="Buscar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <button class="header-icon-button js-cart-open" type="button" aria-label="Carrinho">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </button>
+                <button class="header-icon-button js-menu-open" type="button" aria-label="Menu de categorias">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+
+        </div>
+
+    </header>
+
+    <div class="site-overlay" aria-hidden="true"></div>
+
+    <aside class="side-panel side-menu" id="side-menu" aria-hidden="true" aria-label="Menu de navegação">
+        <div class="side-panel-header side-panel-header-empty">
+            <button class="side-panel-close js-panel-close" type="button" aria-label="Fechar menu">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+
+        <nav class="side-panel-nav" aria-label="Links principais">
+            <a href="Home.html">Home</a>
+            <a href="produtos.html">Shop</a>
+            <a href="sobre.html">About us</a>
+            <a href="contato.html">Contact us</a>
+        </nav>
+    </aside>
+
+    <aside class="side-panel side-cart" id="side-cart" aria-hidden="true" aria-label="Carrinho de compras">
+        <div class="side-panel-header">
+            <h2>Carrinho de compras</h2>
+            <button class="side-panel-close js-panel-close" type="button" aria-label="Fechar carrinho">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+
+        <p class="empty-cart-message">
+            <i class="fa-solid fa-circle-info"></i>
+            O carrinho de compras está vazio.
+        </p>
+    </aside>
+
+    <aside class="side-panel side-search" id="side-search" aria-hidden="true" aria-label="Busca de produtos">
+        <div class="side-panel-header">
+            <h2>Buscar produtos</h2>
+            <button class="side-panel-close js-panel-close" type="button" aria-label="Fechar busca">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+
+        <form class="search-panel-form" id="search-form">
+            <label for="search-input">Pesquisar</label>
+            <div class="search-input-row">
+                <input type="search" id="search-input" placeholder="Digite o nome do produto">
+                <button type="submit" aria-label="Pesquisar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+        </form>
+
+        <div class="search-results" id="search-results">
+            <p>Digite para buscar produtos cadastrados.</p>
+        </div>
+    </aside>
+
+    <main>
+
+        <!-- Carrossel Principal -->
+        <section class="hero-carousel" aria-label="Destaques GlassOff">
+            <div class="carousel-track">
+
+                <article class="carousel-slide is-active">
+                    <img src="assets/car1.jpg" alt="Campanha GlassOff 1">
+                </article>
+
+                <article class="carousel-slide">
+                    <img src="assets/car2.jpg" alt="Campanha GlassOff 2">
+                </article>
+
+                <article class="carousel-slide">
+                    <img src="assets/car3.jpg" alt="Campanha GlassOff 3">
+                </article>
+
+            </div>
+
+            <button class="carousel-arrow carousel-arrow-left" type="button" aria-label="Imagem anterior">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+
+            <button class="carousel-arrow carousel-arrow-right" type="button" aria-label="Próxima imagem">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+        </section>
+
+        <!-- Colecoes -->
+        <section class="collection-section collection-featured">
+            <h2>Nova Coleção</h2>
+
+            <div class="product-grid">
+                <a class="product-card" href="produtos.html">
+                    <img class="product-image" src="assets/camiseta-oversized.jpg" alt="Camiseta Oversized preta da GlassOff" loading="lazy">
+                    <h3>Camiseta Oversized</h3>
+                    <p>R$ 99,90</p>
+                </a>
+
+                <a class="product-card" href="produtos.html">
+                    <img class="product-image" src="assets/urban-black.jpg" alt="Camiseta Urban Black da GlassOff" loading="lazy">
+                    <h3>Urban Black</h3>
+                    <p>R$ 109,90</p>
+                </a>
+
+                <a class="product-card" href="produtos.html">
+                    <img class="product-image" src="assets/urban-white.jpg" alt="Camiseta Urban White da GlassOff" loading="lazy">
+                    <h3>Urban White</h3>
+                    <p>R$ 89,90</p>
+                </a>
+
+                <a class="product-card" href="produtos.html">
+                    <img class="product-image" src="assets/world-cup-edition.jpg" alt="Camiseta World Cup Edition da GlassOff" loading="lazy">
+                    <h3>World Cup Edition</h3>
+                    <p>R$ 119,90</p>
+                </a>
+
+                <a class="product-card" href="produtos.html">
+                    <img class="product-image" src="assets/regata-dry-fit.jpg" alt="Regata Dry Fit preta da GlassOff" loading="lazy">
+                    <h3>Regata Dry Fit</h3>
+                    <p>R$ 89,90</p>
+                </a>
+
+                <a class="product-card" href="produtos.html">
+                    <img class="product-image" src="assets/glass-signature.jpg" alt="Camiseta Glass Signature da GlassOff" loading="lazy">
+                    <h3>Glass Signature</h3>
+                    <p>R$ 109,90</p>
+                </a>
+            </div>
+        </section>
+
+        <section class="collection-section">
+            <h2>Glass Classics</h2>
+
+            <div class="product-grid">
+                <a class="product-card" href="produtos.html">
+                    <img class="product-image" src="assets/urban-black.jpg" alt="Camiseta Urban Black da GlassOff" loading="lazy">
+                    <h3>Urban Black</h3>
+                    <p>R$ 109,90</p>
+                </a>
+
+                <a class="product-card" href="produtos.html">
+                    <img class="product-image" src="assets/urban-white.jpg" alt="Camiseta Urban White da GlassOff" loading="lazy">
+                    <h3>Urban White</h3>
+                    <p>R$ 89,90</p>
+                </a>
+
+                <a class="product-card" href="produtos.html">
+                    <img class="product-image" src="assets/world-cup-edition.jpg" alt="Camiseta World Cup Edition da GlassOff" loading="lazy">
+                    <h3>World Cup Edition</h3>
+                    <p>R$ 119,90</p>
+                </a>
+
+                <a class="product-card" href="produtos.html">
+                    <img class="product-image" src="assets/glass-signature.jpg" alt="Camiseta Glass Signature da GlassOff" loading="lazy">
+                    <h3>Glass Signature</h3>
+                    <p>R$ 109,90</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- Sobre -->
+        <section class="sobre">
+
+            <h2>Quem Somos</h2>
+
+            <p>
+                A GlassOff transforma referências urbanas em peças com identidade.
+                Criamos para quem escolhe enxergar além do óbvio e veste a própria visão.
+            </p>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="footer-logo">
+            <img src="assets/logoTransparent.png" alt="GlassOff">
+            <p>Beyond the Vision.</p>
+        </div>
+
+        <nav class="footer-links" aria-label="Links do rodapé">
+            <a href="Home.html">Home</a>
+            <a href="produtos.html">Shop</a>
+            <a href="sobre.html">About us</a>
+            <a href="contato.html">Contact us</a>
+        </nav>
+
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
