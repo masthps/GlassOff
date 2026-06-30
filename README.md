@@ -61,4 +61,4 @@ Durante o desenvolvimento do GlassOff, foram trabalhados conceitos como:
 Para executar o projeto, basta clonar o repositório e abrir o arquivo `index.html` no navegador.
 
 ```bash
-git clone LINK-DO-REPOSITORIO
+git clone https://github.com/masthps/GlassOff/tree/main
